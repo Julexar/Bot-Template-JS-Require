@@ -1,0 +1,10 @@
+node_modules
+.github
+.gitignore
+.prettierignore
+.prettierrc.json
+LICENSE
+README.md
+SECURITY.md
+package-lock.json
+package.json
