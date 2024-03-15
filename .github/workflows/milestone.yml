@@ -1,0 +1,20 @@
+name: Milestone Assigner
+
+on:
+  pull_request:
+    types:
+      - opened 
+  issues:
+    types:
+      - opened 
+
+jobs:
+  add:
+    name: Add Milestone
+    if: (!contains(github.events.pull_request.labels.*.name, 'dependencies')) || (!contains(github.events.issue.labels.*.name, 'dependencies'))
+    runs-on: ubuntu-latest
+    steps:
+      - uses: Julexar/Milestone-Assigner@v1.0 
+        with:
+          token: ${{ secrets.WORKFLOW_TOKEN }}
+          milestone: "Finish Template"
