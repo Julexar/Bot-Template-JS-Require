@@ -7,11 +7,11 @@ const NotFoundError = require('./not-found');
 const UnauthorizedError = require('./unauthorized');
 
 module.exports = {
-    BadRequestError,
-    CustomError,
-    DuplicateError,
-    ForbiddenError,
-    InternalServerError,
-    NotFoundError,
-    UnauthorizedError
+  BadRequestError,
+  CustomError,
+  DuplicateError,
+  ForbiddenError,
+  InternalServerError,
+  NotFoundError,
+  UnauthorizedError,
 };

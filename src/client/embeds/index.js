@@ -4,8 +4,8 @@ const ListEmbed = require('./list-embed');
 const SuccessEmbed = require('./success-embed');
 
 module.exports = {
-    CustomEmbed,
-    ErrorEmbed,
-    ListEmbed,
-    SuccessEmbed
+  CustomEmbed,
+  ErrorEmbed,
+  ListEmbed,
+  SuccessEmbed,
 };
