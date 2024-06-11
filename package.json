@@ -9,6 +9,8 @@
     "winston": "^3.12.0"
   },
   "scripts": {
+    "deploy": "node ./src/server/commands/deploy.js",
+    "update": "node ./src/server/commands/update.js",
     "prettier": "npx prettier --write ."
   },
   "devDependencies": {

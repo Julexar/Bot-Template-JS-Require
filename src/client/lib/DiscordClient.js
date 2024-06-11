@@ -44,9 +44,7 @@ class DiscordClient extends Client {
   async writeServerLog(server, content) {
     try {
       const guildLog = this.chkServerLog(server);
-
-      if (!fs.existsSync(`./logs/server/${server.id}/${log?.created_at}.log`)) logger.info('========Beginning of new Log========\n');
-
+      guildLog.info('========Beginning of new Log========');
       guildLog.info(content);
 
       this.writeDevLog(`Successfully wrote into Logfile of Server "${server.name}"`);
