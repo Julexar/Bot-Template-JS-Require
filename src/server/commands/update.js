@@ -1,4 +1,4 @@
-import { client } from '../../..';
+const client = require('../../..');
 
 client.guilds.cache.forEach(async guild => {
   await updateSlashCommands(guild);
